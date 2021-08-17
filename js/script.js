@@ -7,8 +7,15 @@ for (const button of buttons) {
     button.addEventListener('click', function () {
         let buttonText = button.innerText;
         if (buttonText != '=') {
-            screen.value += buttonText;
-        } else if (buttonText == '=') {
+            if (buttonText == 'X') {
+                screen.value += '*';
+            } else if (buttonText == 'C') {
+                screen.value = ' ';
+            } else {
+                screen.value += buttonText;
+            }
+        }
+        else if (buttonText == '=') {
             screen.value = eval(screen.value);
         }
 
