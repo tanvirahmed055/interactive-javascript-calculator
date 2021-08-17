@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+
 .container{
     text-align: center;
     margin-top:23px
@@ -34,6 +37,7 @@ button{
 }
 
 h1{
-    font-size: 28px;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    font-family: 'Abril Fatface', cursive;
+    color: #5f504e;
 }
