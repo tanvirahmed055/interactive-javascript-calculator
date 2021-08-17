@@ -11,6 +11,8 @@ for (const button of buttons) {
                 screen.value += '*';
             } else if (buttonText == 'C') {
                 screen.value = ' ';
+            } else if (buttonText == '%') {
+                screen.value = screen.value / 100;
             } else {
                 screen.value += buttonText;
             }
