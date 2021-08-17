@@ -5,7 +5,7 @@ const screen = document.getElementById('screen');
 const buttons = document.getElementsByClassName('buttons');
 for (const button of buttons) {
     button.addEventListener('click', function () {
-        let buttonText = button.innerText;
+        const buttonText = button.innerText;
         if (buttonText != '=') {
             if (buttonText == 'X') {
                 screen.value += '*';
@@ -16,8 +16,7 @@ for (const button of buttons) {
             } else {
                 screen.value += buttonText;
             }
-        }
-        else if (buttonText == '=') {
+        } else if (buttonText == '=') {
             screen.value = eval(screen.value);
         }
 
