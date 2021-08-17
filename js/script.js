@@ -9,7 +9,7 @@ for (const button of buttons) {
         if (buttonText != '=') {
             if (buttonText == 'X') {
                 screen.value += '*';
-            } else if (buttonText == 'C') {
+            } else if (buttonText == 'AC') {
                 screen.value = ' ';
             } else if (buttonText == '%') {
                 screen.value = screen.value / 100;
